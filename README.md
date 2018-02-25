@@ -6,7 +6,7 @@
 
 
 # momentjs
-```
+``` javascript
 // Duration 
 const start = 1519310856932;
 const end = 1519411956932;
