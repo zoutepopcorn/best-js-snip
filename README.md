@@ -18,15 +18,15 @@ console.log(duration);
 # console.log 
 
 ``` javascript
-logErr = () => {
+const logErr = () => {
     console.log(`%c ${msg}`, 'background: red; color: white; display: block;');
 }
 
-logInf = () => {
+const logInf = () => {
     console.log(`%c ${msg}`, 'background: blue; color: white; display: block;');
 }
 
-logWarn = (msg) => {
+const logWarn = (msg) => {
     console.log(`%c ${msg}`, 'background: orange; color: white; display: block;');
 }
 ```
