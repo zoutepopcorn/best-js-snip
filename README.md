@@ -17,7 +17,7 @@ console.log(duration);
 
 # console.log 
 
-```
+``` javascript
 logErr = () => {
     console.log(`%c ${msg}`, 'background: red; color: white; display: block;');
 }
