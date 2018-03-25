@@ -15,9 +15,9 @@ const start = 1519310856932;
 const end = 1519411956932;
 
 const diff = moment.utc(end - start).format('H:mm');
-console.log(diff);
-const dur = moment.duration(start - now).humanize(true); 
-console.log(dur);
+console.log(diff); // 4:05
+const dur = moment.duration(start - now).humanize(true);  
+console.log(dur); // a month ago
 ```
 
 # console.log 
