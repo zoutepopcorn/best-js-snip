@@ -43,3 +43,15 @@ const logWarn = (msg) => {
     console.log(`%c ${msg}`, 'background: orange; color: white; display: block;');
 }
 ```
+
+
+
+
+
+# Vuetify
+
+```html
+<v-btn color="error" fab large dark fixed right bottom>
+  <v-icon>alarm</v-icon>
+</v-btn>
+```
