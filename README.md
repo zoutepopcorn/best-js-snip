@@ -55,3 +55,27 @@ const logWarn = (msg) => {
   <v-icon>alarm</v-icon>
 </v-btn>
 ```
+
+
+
+
+# JSzip remote url
+
+```javascript
+new JSZip.external.Promise(function (resolve, reject) {
+    JSZipUtils.getBinaryContent('path/to/content.zip', function(err, data) {
+        if (err) {
+            reject(err);
+        } else {
+            resolve(data);
+        }
+    });
+}).then(function (data) {
+    return JSZip.loadAsync(data);
+})
+.then(...)
+```
+
+
+
+
