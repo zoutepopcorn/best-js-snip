@@ -31,21 +31,10 @@ if(twoweek > photo) {
 # console.log 
 
 ``` javascript
-const logErr = () => {
-    console.log(`%c ${msg}`, 'background: red; color: white; display: block;');
-}
+const logSuc = console.log.bind(console, '%c %s', 'background: green; color: white');
 
-const logInf = () => {
-    console.log(`%c ${msg}`, 'background: blue; color: white; display: block;');
-}
-
-const logWarn = (msg) => {
-    console.log(`%c ${msg}`, 'background: orange; color: white; display: block;');
-}
+const logErr = console.log.bind(console, '%c %s', 'background: red; color: white');
 ```
-
-
-
 
 
 # Vuetify
