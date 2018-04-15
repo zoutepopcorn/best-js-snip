@@ -32,8 +32,13 @@ if(twoweek > photo) {
 
 ``` javascript
 const logSuc = console.log.bind(console, '%c %s', 'background: green; color: white');
-
 const logErr = console.log.bind(console, '%c %s', 'background: red; color: white');
+
+
+flog = (mess) => {  // logSuc(flog(mss));
+     return `${arguments.callee.caller.name} ${mess}`;   
+}
+
 ```
 
 
