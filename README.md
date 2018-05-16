@@ -73,3 +73,43 @@ new JSZip.external.Promise(function (resolve, reject) {
 
 
 
+
+
+# Node run multiple process
+```javascript
+const exec = require('child_process').exec;
+const CMD_SOCK = `npm run sock`;
+const CMD_DEV = `npm run dev`;
+
+const run = (cmd) => {
+  let dd = exec(cmd);
+  // DD output
+  dd.stderr.on('data', function(data) {
+    console.log(data);
+  });
+  dd.stdout.on('data', function(data) {
+    console.log(data);
+  });
+}
+
+run(CMD_SOCK)
+process.chdir('./webp');
+console.log(`----> ${process.cwd()}`);
+run(CMD_DEV)
+```
+
+
+
+
+
+# Sleep await
+```javascript
+const sleep = async (ms) => {
+  return new Promise((res, rej) => {
+    setTimeout(() => {
+      res();
+    }, ms)
+  });
+}
+```
+
