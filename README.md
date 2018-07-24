@@ -70,10 +70,21 @@ new JSZip.external.Promise(function (resolve, reject) {
 .then(...)
 ```
 
+# Node kleur
+```javascript
+const kleur = require('kleur');
+const rood = (text) => {
+  console.log(kleur.bgRed.bold.white(text));
+}
+const groen = (text) => {
+  console.log(kleur.bgGreen.bold.white(text));
+}
+const geel = (text) => {
+  console.log(kleur.bgYellow.bold.white(text));
+}
 
-
-
-
+rood('error');
+```
 
 # Node run multiple process
 ```javascript
