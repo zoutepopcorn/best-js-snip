@@ -3,8 +3,6 @@
 
 
 
-
-
 # momentjs
 ``` javascript
 // Duration and Diff
@@ -124,3 +122,13 @@ const sleep = async (ms) => {
 }
 ```
 
+
+# Inject script
+
+
+```javascript
+var ref = window.document.getElementsByTagName( 'script' )[0];
+var script = window.document.createElement( 'script' );
+script.src = 'http://localhost:3000/socket.io/socket.io.js';
+ref.parentNode.insertBefore( script, ref )
+```
