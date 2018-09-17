@@ -132,3 +132,18 @@ var script = window.document.createElement( 'script' );
 script.src = 'http://localhost:3000/socket.io/socket.io.js';
 ref.parentNode.insertBefore( script, ref )
 ```
+
+
+# Vuetify icons offline
+
+```
+npm install material-design-icons --save
+npm install typeface-roboto --save
+```
+
+```javascript
+import 'material-design-icons/iconfont/material-icons.css'
+import 'typeface-roboto/index.css'
+```
+
+
