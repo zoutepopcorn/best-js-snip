@@ -40,7 +40,7 @@ flog = (mess) => {  // logSuc(flog(mss));
 ```
 
 
-# Vuetify
+# Vue / Vuetify
 
 ```html
 <v-btn color="error" fab large dark fixed right bottom>
@@ -48,6 +48,10 @@ flog = (mess) => {  // logSuc(flog(mss));
 </v-btn>
 ```
 
+### force update 
+```javascript
+this.$forceUpdate()
+```
 
 
 
@@ -107,17 +111,11 @@ console.log(`----> ${process.cwd()}`);
 run(CMD_DEV)
 ```
 
-
-
-
-
 # Sleep await
 ```javascript
 const sleep = async (ms) => {
   return new Promise((res, rej) => {
-    setTimeout(() => {
-      res();
-    }, ms)
+    setTimeout(res, ms)
   });
 }
 ```
