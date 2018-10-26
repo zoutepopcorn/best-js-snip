@@ -111,6 +111,24 @@ console.log(`----> ${process.cwd()}`);
 run(CMD_DEV)
 ```
 
+# import one class
+```javascript
+// app.js
+import MyClass from './MyClass'
+const cl = new MyClass()
+
+export default class {
+  constructor() {
+    console.log('export a class')
+  }
+}
+
+```
+
+
+
+
+
 # Sleep await
 ```javascript
 const sleep = async (ms) => {
