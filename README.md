@@ -39,6 +39,16 @@ flog = (mess) => {  // logSuc(flog(mss));
 
 ```
 
+### group log
+```
+console.group('test()')
+console.log('hi 0')
+console.log('hi 1')
+console.log('hi 2')
+console.log('hi end')
+console.groupEnd()
+```
+
 
 # Vue / Vuetify
 
