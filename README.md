@@ -40,7 +40,7 @@ flog = (mess) => {  // logSuc(flog(mss));
 ```
 
 ### group log
-```
+```javascript
 console.group('test()')
 console.log('hi 0')
 console.log('hi 1')
