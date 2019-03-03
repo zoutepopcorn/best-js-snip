@@ -121,6 +121,14 @@ console.log(`----> ${process.cwd()}`);
 run(CMD_DEV)
 ```
 
+# Node babel & nodemon
+```json
+  "scripts": {
+    "mon": "nodemon --exec babel-node src/index.js"
+  }
+```
+
+
 # import one class
 ```javascript
 // app.js
@@ -134,10 +142,6 @@ export default class {
 }
 
 ```
-
-
-
-
 
 # Sleep await
 ```javascript
@@ -171,5 +175,10 @@ npm install typeface-roboto --save
 import 'material-design-icons/iconfont/material-icons.css'
 import 'typeface-roboto/index.css'
 ```
+
+
+
+
+
 
 
