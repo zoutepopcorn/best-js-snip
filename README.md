@@ -58,12 +58,24 @@ console.groupEnd()
 </v-btn>
 ```
 
+
 ### force update 
 ```javascript
 this.$forceUpdate()
 ```
 
-
+# Webpack update
+```
+window.addEventListener('message', (e) => {
+    // save latest update
+    const theTime = (new Date()).getTime()
+    const lastReload = window.localStorage.getItem('lastReload')
+    if( (theTime - lastReload)  > 1000) { // its a reload :D
+        window.localStorage.setItem('lastReload', theTime)
+        window.console.clear();
+    }
+});
+```
 
 # JSzip remote url
 
@@ -165,6 +177,12 @@ ref.parentNode.insertBefore( script, ref )
 
 
 # Vuetify icons offline
+
+```
+vue add vuetify
+```
+
+### old
 
 ```
 npm install material-design-icons --save
