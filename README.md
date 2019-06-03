@@ -182,6 +182,17 @@ ref.parentNode.insertBefore( script, ref )
 vue add vuetify
 ```
 
+
+# random shit
+
+```
+const gc = () => {
+    return `${Math.floor(Math.random() * 16).toString(16)}${Math.floor(Math.random() * 16).toString(16)}`
+};
+let out = `00:00:00:${gc()}:${gc()}:${gc()}`
+```
+
+
 ### old
 
 ```
