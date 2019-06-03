@@ -191,6 +191,20 @@ const gc = () => {
 };
 let out = `00:00:00:${gc()}:${gc()}:${gc()}`
 ```
+Assuming that both your keys and your values are serialisable,
+
+
+
+
+```
+localStorage.myMap = JSON.stringify(Array.from(map.entries()));
+```
+should work. For the reverse, use
+
+```
+map = new Map(JSON.parse(localStorage.myMap));
+```
+
 
 
 ### old
