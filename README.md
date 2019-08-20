@@ -71,8 +71,9 @@ window.addEventListener('message', (e) => {
     const theTime = (new Date()).getTime()
     const lastReload = window.localStorage.getItem('lastReload')
     if( (theTime - lastReload)  > 1000) { // its a reload :D
-        window.localStorage.setItem('lastReload', theTime)
-        window.console.clear();
+        window.localStorage.setItem('lastReload', theTime);
+        window.location.reload();
+        // window.console.clear();
     }
 });
 ```
