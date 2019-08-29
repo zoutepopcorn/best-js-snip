@@ -240,5 +240,24 @@ employees.sort(function(a, b){
 ```
 
 
+kill proc
+```javascript
+console.log("start");
+const ON_DEATH = require('death');
+
+ON_DEATH((signal, err) => {
+    //clean up code here
+    console.log('DEATH');
+    setTimeout(() => {
+        process.exit();
+    }, 1000);
+});
+
+setInterval(() => {
+    console.log('.')
+}, 1000);
+
+```
+
 
 
