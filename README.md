@@ -5,7 +5,7 @@
 ```javascript
 const getTime = () => {
   const date = new Date();
-  const az = (n) = {
+  const az = (n) => {
     return n.toString().length == 1 ?  n = `0${n}`: n;
   }
   return `${az(date.getHours())}:${az(date.getMinutes())}.${az(date.getSeconds())}`;
